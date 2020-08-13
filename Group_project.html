@@ -17,8 +17,14 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM PROFILE</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOOLS</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">TEAM PROFILE <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#Personal" class="w3-bar-item w3-button">Personal information</a>
+        <a href="#Profile" class="w3-bar-item w3-button">Personal profile</a>
+      </div>
+    </div>
+    <a href="#tools" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOOLS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IT WORK</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IT TECHNOLOGIES</a>
     <div class="w3-dropdown-hover w3-hide-small">
@@ -30,16 +36,12 @@ body {font-family: "Lato", sans-serif}
         <a href="#" class="w3-bar-item w3-button">Skill required - Outcome</a>
       </div>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  <a href="#teamprofile" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEAM PROFILE</a>
 </div>
 
 <!-- Page content -->
@@ -55,7 +57,7 @@ body {font-family: "Lato", sans-serif}
   </div>
   <div class="mySlides w3-display-container w3-center">
     <img src="Lovepik_com-400446624-global-information-technology-background.jpg" style="width:100%" alt="Intro IT">
-    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small w3-size-30">
+    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small w3-size-50">
       <h1 style="font-family:serif">THE IT WORLD</h1>
       <h2 style="font-family:serif">4-TECH TEAM</h2>
     </div>
@@ -63,32 +65,130 @@ body {font-family: "Lato", sans-serif}
   </div>
 
   <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
+<div id="Personal">
+<div class="w3-row w3-content w3-padding-100" style="max-width:1200px" id="teamprofile">
+      <br>
+      <br>
+      <h2 class="w3-wide w3-center">PERSONAL INFORMATION</h2>
+      <p class="w3-opacity w3-center"><i>4-Tech Team</i></p>
+      <br>
+      <img src="37130343_680310712313243_6156529151424593920_n.jpg" class="w3-left w3-square" alt="IT picture" style="width:30%">
+      <p class="w3-center w3-col m7 w3-right w3-padding"><b>LA TRAN HAI DANG</b></p>
+      <p class="w3-justify w3-col m7 w3-right w3-padding ">Firstly, I will introduce some information about myself. My full name is La Tran Hai Dang and my student number is s3836605. I have been living and studying in District 1 of Ho Chi Minh City for 20 years. Currently, I am a second-year student with my first semester in major that is a bachelor of information technology at RMIT Vietnam University. For me, the field of science and technology, especially information technology, has brought me the passion to learn new knowledge by the vastness of the IT world. I first encountered programming in grade 8, when it was the pascal programming language as an official subject in the school curriculum. I was intrigued by the command lines and the magic of computer algorithms. Since then, I have decided to enter the computer science class at high school and have achieved the silver medal for good students in IT. Besides, not only interested in technology but also music for example playing instruments and participating in volunteer activities are my hobbies. I hope that the time I spend studying and researching information technology will help me improve my professional knowledge and hands-on experience in the technology industry.</p>
+      <br>
+</div>
+<div class="w3-row w3-content w3-padding-100" style="max-width:1200px">
+      <br>
+      <br>
+      <img src="116908707_1410090532533800_7456529723378280413_o.jpg" class="w3-right w3-square" alt="IT picture" style="width:35%">
+      <br>
+      <p class="w3-center w3-col m7 w3-left w3-padding"><b>HUYNH VAN ANH</b></p>
+      <p class="w3-justify w3-col m7 w3-left w3-padding">My full name is Huynh Van Anh, and my student ID is 3836320. I come from Vinh Long City, after graduating from Nguyen Binh Khiem High School, I am now studying at RMIT University. Previously, I was a student specializing in Chemistry. Instead of choosing to become a doctor or pharmacist, I followed my passion and became a member of SST (School of Science and Technology). I have a great curiosity to explore the Data Industry, and I expect to be a Data Scientist. Our team name is called '4tech', which stands for 'Four for Technology.' It is also similar to our Project Idea product's name.</p>
+</div>
+<div class="w3-row w3-content w3-padding-100" style="max-width:1200px" >
+      <br>
+      <br>
+      <img src="109607079_1384136155310311_1151270250796748122_n.jpg" class="w3-left w3-square" alt="IT picture" style="width:35%">
+      <p class="w3-center w3-col m7 w3-right w3-padding"><b>TRINH QUANG MINH</b></p>
+      <p class="w3-justify w3-col m7 w3-right w3-padding ">My name is Trinh Quang Minh. My student ID is s3848088. I am Vietnamese, born in Ho Chi Minh city and I’ve spent three years studying abroad in Sydney, Australia and graduated high school there. My hobbies are playing an instrument (piano and guitar), listening to music, and playing games. I like playing games and I’m curious about how they operate behind the scenes. I also like to sit on my computer doing research, so I think doing IT is suitable for me. I’ve had the basic knowledge about coding in Python 3.0+ as it was a part of the study program that I took part in.</p>
+      <br>
+
+</div>
+<div class="w3-row w3-content w3-padding-100" style="max-width:1200px">
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="116908707_1410090532533800_7456529723378280413_o.jpg" class="w3-right w3-square" alt="IT picture" style="width:35%">
+      <br>
+      <p class="w3-center w3-col m7 w3-left w3-padding"><b>PHAM GIA NGUYEN</b></p>
+      <p class="w3-justify w3-col m7 w3-left w3-padding">My name is Pham Gia Nguyen, my student ID is s2819521. Ho Chi Minh city is where I was born and grew up. Currently, in 2020, I am studying Information Technology program at RMIT with specialising in web development because I want to be a full-stack developer and mobile developer. In the past, I used to have a strong passion for football and swimming because I can connect closer to my friends and I can train myself. I have won a championship in a competition in high school. I have to admit that it is the best experience and exciting during my high school lifetime. However, my passion for IT became large when I saw my big brother, a competitive programmer, solving many challenging database problems such as arrays, multidimensional arrays and matrices in an online contest every weekend. Then, I follow his path to solving problems on the Leetcode website and join a contest at the weekends.</p>
+</div>
+<div class="w3-row w3-content w3-padding-100" style="max-width:1200px">
+      <br>
+    <br>
+      <br>
+</div>
+</div>
+
+
+<!-- The Tour Section -->
+  <div class="w3-black" id="Profile">
+    <div class="w3-container w3-content w3-padding-100" style="max-width:1200px">
+      <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="w3-wide w3-center">PERSONAL PROFILE</h2>
+      <p class="w3-opacity w3-center"><i>4-Tech Team</i></p>
+      <br>
+      <br>
+      <div>
+      <h6 class="w3-wide w3-center">LA TRAN HAI DANG</h6>
+      <br>
+      <img src="dangtest1.jpg" class="w3-mid-left w3-square" alt="IT picture" style="width:30%">
+      <img src="dangtest2.jpg" class="w3-mid-right w3-square" alt="IT picture" style="width:30%">
+      <img src="dangtest3.jpg" class="w3-center w3-square" alt="IT picture" style="width:30%">
+      <div style="max-width:1050px" >
+          <br>
+      <p class=" w3-justify w3-col-1">When working in a team, one of the skills needed to get the most out of a job is listening. Based on the results of my learning style test, the auditory learning style allowed me to easily listen and understand the opinions of the group members. I am a practical and appropriate person to solve difficult group problems in a flexible way instead of working with boring theory. Besides, with good observation and ability to communicate I will be one of the connections that help the team can work together comfortably. Also, as a result of my personality test and Myers-Briggs, I always have a positive and responsible energy in my assigned work. This is important and necessary in team work because it brings dynamism, respect, contribution, and improvement of strengths and weaknesses to achieve the goals set by the group.</p>
+      </div>
+      </div>
+      <div>
+       <br>
+        <br>
+        <br>
+        <br>
+          <h6 class="w3-wide w3-center">HUYNH VAN ANH</h6>
+      <br>
+      <img src="anh1.png" class="w3-mid-left w3-square" alt="IT picture" style="width:30%">
+      <img src="anh2.png" class="w3-mid-right w3-square" alt="IT picture" style="width:30%">
+      <img src="anh3%20.png" class="w3-center w3-square" alt="IT picture" style="width:30%">
+      <div style="max-width:1050px" >
+          <br>
+      <p class=" w3-justify w3-col-1">Because of having an ability to observe, pay attention to others. It is a high score for teamwork; moreover, the second point is being a decisive person in decisions. I confidently arrange the task and timeline to complete the work for our team.  As an effective learner by hearing, I have a tendency to listen and synthesize different ideas before progressing a final decision.  With all of the above, I believe that my good sides can play a crucial role in our group.</p>
+      </div>
+      </div>
+      <div>
+       <br>
+        <br>
+        <br>
+        <br>
+          <h6 class="w3-wide w3-center">TRINH QUANG MINH</h6>
+      <br>
+      <img src="minh1.jpg" class="w3-mid-left w3-square" alt="IT picture" style="width:30%">
+      <img src="minh2.jpg" class="w3-mid-right w3-square" alt="IT picture" style="width:30%">
+      <img src="minh3.jpg" class="w3-center w3-square" alt="IT picture" style="width:30%">
+      <div style="max-width:1050px" >
+          <br>
+      <p class=" w3-justify w3-col-1">From the 3 tests’ results, I found out that I am more of an introverted person, so I and strong in the listening skill but I need to improve my communication skill much more to share ideas with my team as that is an important skill to have in order to bring the best results to the project.</p>
+      </div>
+      </div>
+      <div>
+       <br>
+        <br>
+        <br>
+        <br>
+          <h6 class="w3-wide w3-center">PHAM GIA NGUYEN</h6>
+      <br>
+      <img src="nguyen1.png" class="w3-mid-left w3-square" alt="IT picture" style="width:30%">
+      <img src="nguyen2.png" class="w3-mid-right w3-square" alt="IT picture" style="width:30%">
+      <img src="nguyen3.png" class="w3-center w3-square" alt="IT picture" style="width:30%">
+      <div style="max-width:1050px" >
+          <br>
+      <p class=" w3-justify w3-col-1">Being critical thinking and judging, I can provide useful solutions and sources of the information for the projects with high accuracy. The outcomes will be affected by the decisions of each team member; therefore, having a good vision and judging can improve team performance. Also, I tend to learn by writing down, which I can remember much longer. It is great to share not only with my teammates but also for someone curious about what I have experienced and learnt.</p>
+      <br>
+        <br>
+        <br>
+       <br>
+        <br>
+        <br>
+      </div>
+      </div>
     </div>
   </div>
 
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-    </div>
-  </div>
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32">
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-    </div>
-  </div>
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
